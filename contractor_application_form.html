@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contractor Application Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="contractor-form-container" style="border-color: #ffcdd2;"> <!-- Added red border -->
+        <h2 style="color: #ff0000;">Apply as a Contractor</h2> <!-- Added red text color -->
+        <form id="contractorForm" action="submit_contractor_application.php" method="POST">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <label for="ratePerHour">Rate Per Hour:</label>
+            <input type="number" id="ratePerHour" name="ratePerHour" min="0" step="0.01" required>
+            <!-- Additional fields for contractor application -->
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

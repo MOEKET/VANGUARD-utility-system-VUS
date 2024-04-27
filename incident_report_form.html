@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Incident Reporting Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="incident-form-container" style="border-color: #ffcdd2;"> <!-- Added red border -->
+        <h2 style="color: #ff0000;">Report an Incident</h2> <!-- Added red text color -->
+        <form id="incidentForm" action="submit_incident.php" method="POST">
+            <label for="incidentType">Incident Type:</label>
+            <select id="incidentType" name="incidentType">
+                <option value="streetlight">Streetlight Malfunction</option>
+                <option value="waterLeakage">Water Pipe Leakage</option>
+                <!-- Add more options for different incident types -->
+            </select>
+            <label for="description">Description:</label>
+            <textarea id="description" name="description" rows="4" cols="50" required></textarea>
+            <label for="location">Location:</label>
+            <input type="text" id="location" name="location" required>
+            <label for="image">Image:</label>
+            <input type="file" id="image" name="image">
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

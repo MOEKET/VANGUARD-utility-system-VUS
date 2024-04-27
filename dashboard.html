@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container" style="border-color: #ffcdd2;"> <!-- Added red border -->
+        <h2>Welcome to the Dashboard</h2>
+        <div class="user-info">
+            <!-- Display user information here, such as username, role, etc. -->
+            <p>Welcome, <span id="username">You</span>!</p>
+            <p>Your Role: <span id="userRole">Administrator</span></p>
+        </div>
+        <div class="dashboard-options">
+            <h3>Dashboard Options</h3>
+            <ul>
+                <li><a href="incidents.php">View Incidents</a></li>
+                <li><a href="contractor_applications.php">Contractor Applications</a></li>
+                <li><a href="surveyor_reports.php">Surveyor Reports</a></li>
+                <!-- Add more dashboard options as needed -->
+            </ul>
+        </div>
+        <div class="dashboard-content">
+            <!-- Dashboard content goes here -->
+            <p>This is the dashboard content.</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

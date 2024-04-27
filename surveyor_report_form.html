@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surveyor Report Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="surveyor-form-container" style="border-color: #ffcdd2;"> <!-- Added red border -->
+        <h2 style="color: #ff0000;">Submit Surveyor Report</h2> <!-- Added red text color -->
+        <form id="surveyorForm" action="submit_surveyor_report.php" method="POST">
+            <label for="incidentId">Incident ID:</label>
+            <input type="text" id="incidentId" name="incidentId" required>
+            <label for="surveyorId">Surveyor ID:</label>
+            <input type="text" id="surveyorId" name="surveyorId" required>
+            <label for="inspectionDate">Inspection Date:</label>
+            <input type="date" id="inspectionDate" name="inspectionDate" required>
+            <label for="inspectionNotes">Inspection Notes:</label>
+            <textarea id="inspectionNotes" name="inspectionNotes" rows="4" cols="50" required></textarea>
+            <label for="inspectionResult">Inspection Result:</label>
+            <select id="inspectionResult" name="inspectionResult" required>
+                <option value="pass">Pass</option>
+                <option value="fail">Fail</option>
+            </select>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

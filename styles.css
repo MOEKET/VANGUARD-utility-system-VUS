@@ -1,0 +1,188 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+h2 {
+    text-align: center;
+}
+
+form {
+    margin-top: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.message {
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #ffebee; /* Touch of red */
+    border: 1px solid #ffcdd2; /* Border color */
+    color: #ff0000; /* Red text color */
+}
+
+.links {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.links a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.links span {
+    margin: 0 5px;
+}
+
+/* Additional styles for specific pages */
+
+/* Login page styles */
+.login-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ffcdd2; /* Added red border */
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.login-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ff0000; /* Added red text color */
+}
+
+.login-form {
+    margin-top: 20px;
+}
+
+.login-form .form-group {
+    margin-bottom: 20px;
+}
+
+/* Incident reporting form styles */
+.incident-form-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ffcdd2; /* Added red border */
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.incident-form-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ff0000; /* Added red text color */
+}
+
+.incident-form {
+    margin-top: 20px;
+}
+
+.incident-form .form-group {
+    margin-bottom: 20px;
+}
+
+/* Contractor application form styles */
+.contractor-form-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ffcdd2; /* Added red border */
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.contractor-form-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ff0000; /* Added red text color */
+}
+
+.contractor-form {
+    margin-top: 20px;
+}
+
+.contractor-form .form-group {
+    margin-bottom: 20px;
+}
+
+/* Surveyor report form styles */
+.surveyor-form-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ffcdd2; /* Added red border */
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.surveyor-form-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ff0000; /* Added red text color */
+}
+
+.surveyor-form {
+    margin-top: 20px;
+}
+
+.surveyor-form .form-group {
+    margin-bottom: 20px;
+}
+
+/* Dashboard styles */
+.dashboard-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ffcdd2; /* Added red border */
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
