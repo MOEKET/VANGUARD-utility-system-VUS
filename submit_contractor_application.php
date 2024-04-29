@@ -2,23 +2,26 @@
 // Include database connection
 include('db_connection.php');
 
-// Handle incident form submission
+// Handle contractor application form submission
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Process form data
-    $incidentType = $_POST['incidentType'];
-    $description = $_POST['description'];
-    $location = $_POST['location'];
+    $username = $_POST['username'];
+    $password = $_POST['password'];
+    $ratePerHour = $_POST['ratePerHour'];
     
     // Validate data (ensure all required fields are filled)
-    if (empty($incidentType) || empty($description) || empty($location)) {
+    if (empty($username) || empty($password) || empty($ratePerHour)) {
         // Handle validation error
         echo "Error: Please fill in all required fields.";
         exit();
     }
     
-    // Insert data into the incidents table
-    $sql = "INSERT INTO incidents (incident_type, description, location, status, date_reported) 
-            VALUES ('$incidentType', '$description', '$location', 'Pending', NOW())";
+    // Hash the password
+    $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
+    
+    // Insert data into the contractors table
+    $sql = "INSERT INTO contractors (username, password, rate_per_hour) 
+            VALUES ('$username', '$hashedPassword', '$ratePerHour')";
     
     if ($conn->query($sql) === TRUE) {
         // Redirect to success page or output success message
